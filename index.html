@@ -339,18 +339,7 @@
       </section>
     </div>
 
-    <script type="module">
-      import React from "https://esm.sh/react@19.2.4";
-      import { createRoot } from "https://esm.sh/react-dom@19.2.4/client";
-      import { Agentation } from "https://esm.sh/agentation@2.2.0";
-
-      const mountNode = document.createElement("div");
-      mountNode.id = "agentation-root";
-      document.body.appendChild(mountNode);
-
-      const root = createRoot(mountNode);
-      root.render(React.createElement(Agentation));
-
+    <script>
       const initTabs = (scope) => {
         const tabs = scope.querySelectorAll(".tab[data-tab]");
         const titles = scope.querySelectorAll(".tab-title[data-tab-title]");
